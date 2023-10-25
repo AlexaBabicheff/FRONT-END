@@ -6,45 +6,13 @@
 }
 
 body{
-    max-width:1920px; 
-}
-
-@media screen and (max-width: 1440px) {
-    .header-content {
-        padding-top: 1440px;
-    }
-    .titel{
-        max-width: 550px;
-    }
-    .titel h1{
-        font-size: 58px;
-        letter-spacing: 1px;
-        gap: 15px;
-    }
-    .titel p{
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    .calender{
-        max-width: 1000px;
-        min-height: 250px;
-        gap: 25px;
-    }
-    .calender .data{
-        font-size: 68px;
-    }
-    
-    .calender .years{
-        font-size: 32px;
-    }
-    
-    .calender .on_market{
-        font-size: 16px;
-    }
-    .calender{
-        padding: 52px 117px 52px 117px;
-    }    
-  }
+    max-width:1920px; }
+/* 
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
 
 .header-content{
     width: 100vw;
@@ -52,7 +20,8 @@ body{
     background: linear-gradient(0deg, rgba(64, 65, 73, 0.90) 0%, rgba(64, 65, 73, 0.90) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #404149;
     background-image: url("./media/Rectangle.svg");
     display: grid;
-    justify-content: center;   
+    justify-content: center;
+       
 }
 
 .titel{
@@ -74,7 +43,7 @@ body{
     color: #FFF;
     text-align: center;
     font-size: 18px;
-  font-style: normal;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 15px;
@@ -140,7 +109,17 @@ body{
 .main-content{
     display: grid;
     justify-content: space-around;
-    padding: 200px 405px 200px 405px;
+    padding: 200px 405px 200px 405px;    
+}
+
+.arena img.panorama{
+    width: 365px;
+    height: 296px;
+}
+
+.arena img.strich{
+    width: 55px;
+    height: 6px;
 }
 
 .main-content-titel{
@@ -156,6 +135,9 @@ body{
 
 .main-content .arena{
     min-height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -400,3 +382,341 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    .header-content {
+        padding-top: 1440px;
+    }
+    .titel{
+        max-width: 550px;
+    }
+    .titel h1{
+        font-size: 58px;
+        letter-spacing: 1px;
+        gap: 15px;
+    }
+    .titel p{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .calender{
+        max-width: 1000px;
+        min-height: 250px;
+        gap: 25px;
+
+    }
+    .calender .data{
+        font-size: 68px;
+    }
+    
+    .calender .years{
+        font-size: 32px;
+    }
+    
+    .calender .on_market{
+        font-size: 16px;
+    }
+    .calender{
+        display: flex;
+        align-items: center;
+        padding: px 117px 52px 117px;
+    }    
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1220px) {
+    .header-content {
+        width: 106vw;
+        padding-top: 99px;
+    }
+    .titel{
+        max-width: 450px;
+    }
+    .titel h1{
+        font-size: 56px;
+        letter-spacing: 1px;
+        gap: 5px;
+        padding-left: 58px;
+    }
+    .titel p{
+        font-size: 12px;
+        margin-bottom: 8px;
+        padding-left: 67px;
+    }
+    .calender{
+        max-width: 1000px;
+        min-height: 250px;
+        gap: 25px;
+    }
+    .calender .data{
+        font-size: 55px;
+    }
+    
+    .calender .years{
+        font-size: 27px;
+    }
+    
+    .calender .on_market{
+        font-size: 12px;
+    }
+    .calender{
+        padding: 52px 117px 52px 117px;
+        
+    }    
+    .main-content{
+        display: grid;
+        justify-content: space-around;
+        padding: 191px 425px 200px auto;}
+    
+    .main-content{
+    gap: 10px;}
+
+    .arena img.panorama{
+        width: 198px;
+        height: 242px;
+    }
+    
+    .arena img.strich{
+        width: 50px;
+        height: 5px;
+    }
+  
+    .main-content .arena p{
+        font-size: 14px;
+    }
+
+    .main-footer{
+        font-weight: 500;
+        min-height: 150px;
+    }
+    
+    .main-footer h2{
+        font-size: 42px; 
+
+    }
+    
+    .main-footer p{
+        font-size: 20px;
+    }
+    
+    .main-footer button{
+        font-size: 10px;
+        font-weight: 400;
+        padding: 10px 25px 10px 25px;
+    }
+    
+    .secondPage-header{
+        gap: 10px;   
+        padding: 25px 403px 5px 403px;   
+    }
+
+    .secondPage-header h2{
+        font-size: 36px; 
+        font-weight: 500;
+    }
+        
+    .secondPage-header .media{
+        max-width: 300px;
+        min-height: 250px;
+        padding-top: 50px;
+    }
+    
+    .secondPage-header p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+
+    .secondPage-mean{
+        padding-top: 20px;
+        max-width: 1220px;
+        padding: 5px 405px 5px 405px; 
+        gap: 10px;      
+    }
+
+    .secondPage-mean h2{
+        font-size: 36px; 
+        font-weight: 500;
+    }
+    
+    .secondPage-header .media{
+        max-width: 300px;
+        min-height: 250px;
+        padding-top: 50px;
+    }
+    
+    .secondPage-header p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .contacts{
+        padding-top: 18px;
+    }
+    
+    .contacts h2{
+        font-size: 32px;
+    }
+    
+    .contacts .adress{
+        grid: 20px;
+        padding: 20px;
+    }
+    
+    .adress span{
+        font-size: 18px;
+    }
+    
+    footer{
+        height: 72px;
+        font-size: 14px;
+    }
+}
+    /* @media only screen and (min-width: 320px) and (max-width: 720px) {
+        .header-content {
+            width: 117vw;
+            padding-top: 74px;
+        }
+        .titel{
+            max-width: 250px;
+        }
+        .titel h1{
+            font-size: 24px;
+            letter-spacing: 1px;
+            gap: 2px;
+            padding-left: 5px;
+        }
+        .titel p{
+            font-size: 12px;
+            margin-bottom: 8px;
+            padding-left: 67px;
+        }
+        .calender{
+            max-width: 1000px;
+            min-height: 250px;
+            gap: 25px;
+        }
+        .calender .data{
+            font-size: 55px;
+        }
+        
+        .calender .years{
+            font-size: 27px;
+        }
+        
+        .calender .on_market{
+            font-size: 12px;
+        }
+        .calender{
+            padding: 52px 117px 52px 117px;
+            
+        }    
+        .main-content{
+            display: grid;
+            justify-content: space-around;
+            padding: 191px 425px 200px auto;}
+        
+        .main-content{
+        gap: 10px;}
+    
+        .arena img.panorama{
+            width: 198px;
+            height: 242px;
+        }
+        
+        .arena img.strich{
+            width: 50px;
+            height: 5px;
+        }
+      
+        .main-content .arena p{
+            font-size: 14px;
+        }
+    
+        .main-footer{
+            font-weight: 500;
+            min-height: 150px;
+        }
+        
+        .main-footer h2{
+            font-size: 42px; 
+    
+        }
+        
+        .main-footer p{
+            font-size: 20px;
+        }
+        
+        .main-footer button{
+            font-size: 10px;
+            font-weight: 400;
+            padding: 10px 25px 10px 25px;
+        }
+        
+        .secondPage-header{
+            gap: 10px;   
+            padding: 25px 403px 5px 403px;   
+        }
+    
+        .secondPage-header h2{
+            font-size: 36px; 
+            font-weight: 500;
+        }
+            
+        .secondPage-header .media{
+            max-width: 300px;
+            min-height: 250px;
+            padding-top: 50px;
+        }
+        
+        .secondPage-header p{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+    
+        .secondPage-mean{
+            padding-top: 20px;
+            max-width: 1220px;
+            padding: 5px 405px 5px 405px; 
+            gap: 10px;      
+        }
+    
+        .secondPage-mean h2{
+            font-size: 36px; 
+            font-weight: 500;
+        }
+        
+        .secondPage-header .media{
+            max-width: 300px;
+            min-height: 250px;
+            padding-top: 50px;
+        }
+        
+        .secondPage-header p{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .contacts{
+            padding-top: 18px;
+        }
+        
+        .contacts h2{
+            font-size: 32px;
+        }
+        
+        .contacts .adress{
+            grid: 20px;
+            padding: 20px;
+        }
+        
+        .adress span{
+            font-size: 18px;
+        }
+        
+        footer{
+            height: 72px;
+            font-size: 14px;
+        }
+
+} */
