@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* display: inline-flex;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FBFAFA;
+    gap: 5px;
+    padding: 5px;
+}
+
+.picture img{
+    max-width: 720px;
+    height: auto;
+} 
+
+.form{
+    width: auto;
+    max-height: 850px;
+    /* flex-shrink: 0; */
+    border-radius: 10px;
+    padding: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(215, 215, 215, 0.25);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+}
+
+.form .form-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.form h1{
+    color: var(--black-03, #414344);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}   
+
+.form p{
+    color: var(--black-04, #676767);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-header .header_icons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.header_icons img{
+    max-width: 20px;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+}
+
+form h3{
+    color: var(--black-03, #414344);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0px;
+}
+
+.form input{
+    max-width: 367px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--light-grey-06, #E3E1E1);
+}
+
+.form-body .checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox label{
+    color: var(--black-04, #676767);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button{
+    width: 367px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    color: var(--light-grey-01, #FCFCFC);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--blue-01, #0A55C6);
+}

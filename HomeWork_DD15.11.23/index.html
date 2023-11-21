@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+                <div class="picture">
+                        <a href="/">
+                            <img src="https://s3-alpha-sig.figma.com/img/536c/0a39/faa830d86bf00154b4f8e88885dae6ce?Expires=1701043200&Signature=Bt-S1FhpX8SXX8frSPYOVoucSSFSiu6QtFNZ5u1d6DOxZPOUo8HfOqfhLD181AL1ODtEwoYOuIS-p56dpDY5mGl20ev8moFjHqWS9tv1QQAsjETgVlC1N6XrrN-whHw6WIB0W18XgCY12RXStPH8IyTuyw6JRwJrIbDScZiNtEBOuRTesgMFbIn~gPj3RigSCJrKbECr30TcpXQLL2YzV~t2UHq-2Un11~4ZjgycU8W5GQTu070XWbyLmjAtLcupfFsLcyFU~hyuKR-s9zSvtQZoLgbqlMA7c30q4plLSV1KIb8VnPDD~97p5kqRSLqQgzBeEA8HwKTCG4f28t3-jQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </a>
+                </div>
+                <div class="form">
+                    <form action="/login" method="post">
+                    <div class="form-header">
+                        <div class="header">
+                            <h1>Create account</h1>
+                            <p>Or register using email & password</p>  
+                        </div>
+                        <div class="header_icons">
+                            <img src="./media/facebook-fill 1.svg" alt="facebook">
+                            <img src="./media/google-fill 1.svg" alt="google">
+                            <img src="./media/twitter-fill 1.svg" alt="twitter">
+                        </div> 
+                    </div>
+                    <div class="form-body">
+                        <h3>Full name</h3>
+                        <input type="name" name="username" placeholder=" John rambo">
+                        <h3>Email address</h3>
+                        <input type="email" name="mail" placeholder=" hello@hey.com">
+                        <h3>Create password</h3>
+                        <input type="create_password" name="password" placeholder=" ............">
+                        <h3>Confirm password</h3>
+                        <input type="confirm_password"  name="confirm_password" placeholder=" ............">
+                            <div class="checkbox">
+                                <input type="checkbox" id="scales" name="scales" checked />
+                                <label for="scales">I agree to the <a href="/register">terms</a> & <a href="/register">privacy policy</a></label>
+                            </div>
+                    </div>
+                        <button>Register</button>
+                    </form>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
+
+<!-- 1 уровень сложности: Макет для работы:
+https://www.figma.com/file/nSWOAOsrXNnFiPb7Wc7Ebv/UI-Kit-(Community)?node-id=0%3A1&mode=dev 
+
+Уважаемые студенты, для того, чтобы все студенты могли выполнить домашнее здаание и сдать его, работа будет состоять из трех уровней сложности:
+1 уровень - простой 
+Реализация формы(как на изображении), сделать верстку, используя html и css
+
+
+2 уровень - сохраняем в localStorage данные из инпутов, на данный момент в каждом инпуте отдельно (на занятии во вторник будем сохранять объекты полностью, используя JSON.stringify() )
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
+
+вешаем на форму событие submit 
+form.addEventListener('submi', () => {
+localstorage.setItem('name', nameInput.value)
+
+
+…. 
+
+
+продолжение кода
+})
+
+
+при загрузке страницы достаем данные из localStorage, используя getItem и подставляем в значение инпута 
+(такую операцию мы делали на занятии вместе) 
+
+
+3 уровень сложности реализовать форму, используя только методы DOM в JS
+document.createEement()
+innerText
+присваивание аттрибутов 
+создание классов через className 
+прикрепляем элементы используя append
+
+
+Etc. 
+
+
+пример создания инпута name и кнопки submit:
+const form = document.createElement('form')
+root.append(form)
+
+
+const name = document.createElement('input')
+name.id = 'name'
+name.placeholder = 'enter name'
+name.type = 'text'
+name.required = true
+name.classList.add('name-input')
+
+
+const submitButton = document.createElement('button')
+submitButton.type = 'submit'
+submitButton.innerText = 'Submit'
+form.append(name, submitButton)
+
+
+если будут вопросы, задавайте!
+
+
+2 уровень сложности:  -->
